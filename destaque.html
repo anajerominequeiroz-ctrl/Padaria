@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destaques — Padaria Pão &amp; Cia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Padaria Pão &amp; Cia</h1>
+        <p class="subtitulo">A melhor padaria de Londrina</p>
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="destaques.html">Destaques</a>
+            <a href="index.html#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Destaques do dia</h2>
+            <p>Os queridinhos da casa, fresquinhos todos os dias.</p>
+        </section>
+
+        <!-- Cards de destaque (reaproveita o estilo .cards / .card) -->
+        <section class="destaques">
+            <div class="cards">
+                <article class="card">
+                    <span class="selo">Novo</span>
+                    <img src="img/pao-de-mel.jpg" alt="Pão de mel artesanal">
+                    <h3>Pão de Mel Artesanal</h3>
+                    <p>Massa macia com recheio de doce de leite.</p>
+                    <p><strong>R$ 8,00</strong></p>
+                </article>
+                <article class="card">
+                    <span class="selo">Mais vendido</span>
+                    <img src="img/bolo-fuba.jpg" alt="Bolo de fubá com goiabada">
+                    <h3>Bolo de Fubá com Goiabada</h3>
+                    <p>O clássico da tarde, quentinho.</p>
+                    <p><strong>R$ 7,00</strong></p>
+                </article>
+                <article class="card">
+                    <img src="img/coxinha.jpg" alt="Coxinha de frango com catupiry">
+                    <h3>Coxinha com Catupiry</h3>
+                    <p>Crocante por fora, cremosa por dentro.</p>
+                    <p><strong>R$ 8,00</strong></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- RECEITAS EM VÍDEO -->
+        <section class="receitas">
+            <h2>Receitas em vídeo</h2>
+            <p>Aprenda a fazer nossos clássicos em casa.</p>
+
+            <div class="videos">
+
+                <!-- OPÇÃO 1: vídeo do YouTube (troque VIDEO_ID pelo código do vídeo) -->
+                <div class="video-item">
+                    <h3>Como fazer Pão de Mel</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+                                title="Receita de pão de mel"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- OPÇÃO 2: vídeo próprio (arquivo .mp4 dentro da pasta img/) -->
+                <div class="video-item">
+                    <h3>Bolo de Fubá com Goiabada</h3>
+                    <video controls width="100%">
+                        <source src="img/receita-bolo-fuba.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeo.
+                    </video>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Rua das Flores, 123 — Londrina/PR · (43) 99999-0000</p>
+        <p><small>Site desenvolvido pelos alunos do CEEP Castaldi · 2026</small></p>
+    </footer>
+
+</body>
+</html>
+
